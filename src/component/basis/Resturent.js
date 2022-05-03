@@ -16,7 +16,7 @@ const uniqueList = [
 const Resturent = () => {
   
   const [menuData, setMenuData] = useState(Menu);
-  const [meanuList,setMenuList]=useState(uniqueList);
+  // const menuList=use State(uniqueList);
   const filterItem =(category) =>{
     if (category=="All"){
       setMenuData(Menu);
@@ -30,7 +30,7 @@ const Resturent = () => {
   
   return (
     <>
-    <Navbar filterItem={filterItem} menuList={meanuList}/>
+    <Navbar filterItem={filterItem} menuList={uniqueList}/>
     
      <MenuCard menuData={menuData}/>
     
